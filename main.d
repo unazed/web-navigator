@@ -30,6 +30,13 @@ void main()
 	{
 		write("Enter website, port and receive segment size: ");
 		auto line = readln.chomp;
+		
+		if (line == "exit")
+		{
+			writeln("Thanks for reading/using my trash little program :)");
+			return;
+		}
+		
 		auto res = splitter(line, ' ').array;
 
 		writeln(res);
